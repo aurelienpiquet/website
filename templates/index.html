@@ -1,0 +1,225 @@
+{% extends 'bootstrap/base.html' %}
+{% include 'header.html' %}
+<html lang="en">
+
+{% block content %}
+
+<body>
+  <!-- ***************** presentation container ****************** -->
+  <div class="presentation-container" id="apropos">
+    <div class="container container-bonjour">
+      <h1 style="margin-left:10%; margin-bottom:5%;">Bonjour !</h1>
+      <h1 style="margin-left:10%">Je suis</h1>
+      <div class="row container-nom">
+        <div class="col">
+          <h1 class="nom" id='nom'>Aurélien.</h1>
+        </div>
+        <div class="col col-avatar">
+          <img class="avatar" src="static/Images/avatar.png" alt="Piquet Aurélien Avatar">
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-left"> Technicien imagerie spécialisé en étude clinique de produit cosmétique, situé à Bordeaux, France.
+      <br><br><br>
+      J'ai travaillé pendant 10 ans dans une CRO internationnale en tant que photographe & technicien & reponsable imagerie.
+      <br><br><br>
+      Mes compétences sont diverses: photographie, analyse d'image, programmation et webdesign.
+    </h2>
+
+  </div>
+  <!-- ******************** Skills container *************** -->
+  <div class="skill-container" id="skills">
+    <hr class="hr-marge">
+    <div class="skills">
+      <h3 style="padding-top:3%">Analyse d'image et Photographie clinique </h3>
+      <div class="skill-row row">
+        <div class="col-lg-6 col-md-6 col-sm">
+          <p> Bonnes connaissances d'outils d'analyse d'image (Matlab, Image-Pro-Plus), d'analyse d'empreinte (Toposurf, Quantiride, projection de franges),
+            ainsi que des logiciels comme Photoshop,
+            Movavi utilisé pour réaliser des présentations et illustrations de résultats.
+            Maitrise de méthodes et de logiciels de prises de vue pour les études cliniques (banc photo, &copyVisiaCR,
+            &copyChromasphere, &copyDermascope). </p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm">
+          <img class="flaticon photograph" src="static/Images/photograph.png" alt="photograph image">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm">
+          <img class="flaticon monitoring" src="static/Images/monitoring.png" alt="monitoring image">
+        </div>
+      </div>
+      <div class="arrow-wrapper">
+        <div class="arrow-up"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-up"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-up"></div>
+      </div>
+
+      <h3> Développeur et Webdesigner junior </h3>
+      <div class="skill-row row">
+        <div class="col-lg-6 col-md-6 col-sm">
+          <p> Développement front-end et back-end en language Python, HTML et CSS avec VisualStudioCode, et Atom. Bonnes connaissances dans
+            des modules comme Pyside2 (interface graphique), Selenium (webscrapping), Pandas (data analysis),
+            Matplotlib (visualisation de données graphiques), Flask (framework), et Bootstrap5 (css webdesign).
+          </p>
+          </div>
+        <div class="col-lg-3 col-md-3 col-sm">
+          <img class="flaticon coding" src="static/Images/coding.png" alt="coding image">
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm">
+          <img class="flaticon webdesign" src="static/Images/webdesign.png" alt="webdesign image">
+        </div>
+      </div>
+      <div class="arrow-wrapper">
+        <div class="arrow-down"></div>
+        <div class="arrow-up"></div>
+        <div class="arrow-down"></div>
+        <div class="arrow-up"></div>
+        <div class="arrow-down"></div>
+      </div>
+
+
+      <h3> Recherche-Développement & Management </h3>
+      <div class="skill-row row">
+        <div class="col-lg-6 col-md-6 col-sm">
+          <p> Développement de nouvelles procédures et techniques de prises de vue. Rédation de crédit impôt recherche. Interprétation de résultats, et réalisation d'illustrations.
+            Formation de nouveaux techniciens en prise de vue, ainsi que leur suivi pendant les études cliniques. </p>
+          
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm">
+          <img class="flaticon flaticon-managment" src="static/Images/management.png" alt="photograph image">
+        </div>
+      </div>
+    </div>
+    <hr class="hr-marge">
+  </div>
+
+  <!-- ****************** CAROUSEL ******************** -->
+  <br id="analyse">
+  <div class="container-analyse">
+    <h3> Quelques exemples d'analyses d'images. </h3>
+    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner container">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/toposurf_bg_2.png" class="center-block w-100 img-carousel" alt="Image de ride">
+              <div class="card-body">
+                <h5 class="card-title-2"> Quantiride & Frange & Toposurf </h5>
+                <p class="card-text"> Illustration d'une analyse en projection de frange couplé au logiciel &copytoposurf.</p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/cerne.png" class="center-block w-100 img-carousel" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Cernes </h5>
+                <p class="card-text"> Détection de cerne par seuillage pour calcul de surface, C, dE, Lab ... </p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/pores.jpg" class="center-block w-100 img-carousel" alt="Analyse de pores">
+              <div class="card-body">
+                <h5 class="card-title"> Pores </h5>
+                <p class="card-text"> Détection des pores par seuillage pour calcul de nombre, surface totale, taille ... </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/pigmentaire.png" class="center-block w-100 img-carousel" alt="image de menton">
+              <div class="card-body">
+                <h5 class="card-title">Pigmentaire&Vasculaire </h5>
+                <p class="card-text"> Photographie en polarisé croisé : tâche, rougeur ... </p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/cdd.png" class="center-block w-100 img-carousel" alt="Champ de déplacement">
+              <div class="card-body">
+                <h5 class="card-title"> Champs de déplacement </h5>
+                <p class="card-text"> Analyse de la déformation du maillage de la peau dû à des effets tenseurs. </p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/cil.png" class="center-block w-100 img-carousel" alt="image de cil">
+              <div class="card-body">
+                <h5 class="card-title"> Cils </h5>
+                <p class="card-text"> Mesure d'angle de redressement, angle base-pointe, longueur, épaisseur ... </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/eye_bag.png" class="center-block w-100 img-carousel" alt="Poche">
+              <div class="card-body">
+                <h5 class="card-title"> Poches sous les yeux </h5>
+                <p class="card-text"> Tracé sur photographie réalisée par profilométrie (avec &copyPerilaf). </p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/irien.png" class="center-block w-100 img-carousel" alt="Recouvrement irien">
+              <div class="card-body">
+                <h5 class="card-title"> Paupière&Oeil </h5>
+                <p class="card-text"> Tracé du recouvrement irien pour analyse de produit anti-âge. </p>
+              </div>
+            </div>
+            <div class="card col-sm grow">
+              <img src="static/Images/analysis/jugo.png" class="center-block w-100 img-carousel" alt="image de menton">
+              <div class="card-body">
+                <h5 class="card-title"> Relachement </h5>
+                <p class="card-text"> Tracer de l'angle jugo-mentonier pour analyse de produit anti-âge. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev button-carousel" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next button-carousel" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-container" id="contact">
+    <hr>
+    <h3> Je suis actuellement en recherche d'un nouveau poste. </h3>
+    <p> Vous recherchez un développeur junior en Python-HTML-CSS ou un technicien imagerie? <br><br>
+      Voici mes coordonnées, vous pouvez également m'envoyer un mail en cliquand sur "demande de contact" et télécharger mon CV.
+      <br><br>A très vite!
+    </p>
+
+    <div class="container-copy row">
+      <!-- The text field -->
+      <h4 class="col-md-auto" id="mail"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span>piquet.aurelien.perso@gmail.com</h4>
+      <button id="button_mail" type="button" class="button-copy col-md-auto btn btn-outline-primary" onclick="copyToClipboard('#mail'); copy_adresse('button_mail')"> Copier </button>
+    </div>
+    <div class="container-copy row">
+      <!-- The text field -->
+      <h4 class="col-md-auto" id="tel"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i><i class="fas fa-phone fa-stack-1x fa-inverse"></i></span> 06 76 21 02 30 </h4>
+      <button id="button_tel" type="button" class="button-copy col-md-auto btn btn-outline-primary" onclick="copyToClipboard('#tel'); copy_tel('button_tel')"> Copier </button>
+    </div>
+
+    <div class="container-button d-grid gap-2 d-md-block mx-auto">
+      <a class="button-contact btn btn-primary btn-lg" role='button' href="mailto:piquet.aurelien.perso@gmail.com"><i class="far fa-envelope"></i> Demande de contact </a>
+      <a download class="button-cv btn btn-primary btn-lg" role='button' href="static/Images/CV_AP_2021.jpg"><i class="fas fa-download"></i> Mon CV </a>
+    </div>
+    <hr class="hr-white">
+
+    {% include 'footer.html' %}
+    {% endblock %}
+
+  </div>
+  </div>
+</body>
+
+</html>

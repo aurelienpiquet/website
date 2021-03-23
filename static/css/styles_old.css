@@ -1,0 +1,163 @@
+/******* HEADERS AND BODY ***************/
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family:'Merriweather', serif;
+  }
+
+h1 {
+  background-color: red;
+  margin: 30px auto 0 auto; /* top bot 0 left right auto */
+  font-family: 'Montez', serif;
+  font-size: 5.62rem;
+  color:#34626c;
+  }
+
+h2 {
+  line-height: 2;
+  font-family: 'Montez', serif;
+  font-size:3.5rem;
+  font-weight: normal;
+  color:#34626c;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  color:#788d8a;
+  text-align: center;
+}
+
+hr { border-style: none none dotted;
+  border-width: 7px;
+  width: 300px;
+  margin: 30px auto;
+  border-image-source: linear-gradient(to right, #f7e2c1 0%, #a09179 100%);
+  border-image-slice: 1;
+  }
+
+/************ CONTAINER ***********************/
+.top2-container {
+  background-color: #c6b497;
+  padding-top: 30px;
+  }
+
+.top-container {
+  margin:50px;
+  background-color: #c6b497;
+  padding-top: 75px;
+}
+
+.middle-container {
+  margin:0;
+  text-align: center;
+  background-color: #e7f1e4;
+}
+
+.bottom-container {
+  margin-top: 0px;
+  padding : 10px;
+  color: #cfd3ce;
+  background-color: #34626c;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.skill-row {
+  width: 50%;
+  margin:100px auto;
+  text-align:justify;
+  line-height: 2;
+}
+
+/************** IMAGES ********************/
+.top-cloud {
+  position: absolute;
+  left: 1100px;
+  top:30px
+}
+
+.bottom-cloud {
+  position:absolute;
+  left: 500px;
+  top:200px;
+}
+
+.photo-profil {
+  height: 100px;
+  margin-right: 400px;
+}
+
+.flaticon {
+  margin-right:20px;
+  margin-top: auto;
+  height:200px;
+  float: left;
+}
+
+.flaticon2 {
+  margin-left:20px;
+  height:200px;
+  float: right;
+}
+
+.management {
+  margin-top: 10px;
+  margin-right: 120px;
+}
+
+.footer-link {
+  color: #cfd3ce;
+  font-family: 'Montserrat', serif;
+  text-decoration:none;
+  margin-right: 20px;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.toper-link {
+  color: #34626c;
+  font-family: 'Montserrat', serif;
+  text-decoration:none;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-style: normal;
+}
+
+/************** BOUTON ********************/
+.btn {
+  margin:20px;
+   background: #34626c;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 30px;
+   font-weight: 100;
+   padding: 20px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #34626c 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid  #34626c 1px;
+   background:  #839b97;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+
+/************
+div = container = box
